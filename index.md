@@ -6,7 +6,7 @@ venue: "NASA Langley Research Center"        # brief name of host site without a
 address: "Building 2102 Room 203"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "37.095723, -76.385385"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+latlng: "37.090684, -76.382114"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 humandate: "Sep 25-26, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-09-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -37,7 +37,7 @@ For a workshop please delete the following block
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to customize your
 own website. If you are running a self-organized workshop or have not put in a
-workshop request yet, please also fill in 
+workshop request yet, please also fill in
 <a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know
 about your workshop and our administrator may contact you if we need any extra
 information.
@@ -46,7 +46,7 @@ information.
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
+<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to
 see the changes take effect locally.
 </div>
 {% endif %}
@@ -202,12 +202,12 @@ Display the contact email address set in the configuration file.
 
 <hr/>
 
-{% comment %} 
-SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -360,7 +360,7 @@ please preview your site before committing, and make sure to run
               <li>Click on "Next".</li>
               {% comment %} Choosing HTTPS transport backend {% endcomment %}
               <li>Select "Use the native Windows Secure Channel library", and click "Next".</li>
-              {% comment %} This should mean that people stuck behind corporate firewalls that do MITM attacks 
+              {% comment %} This should mean that people stuck behind corporate firewalls that do MITM attacks
                                  with their own root CA are still able to access remote git repos. {% endcomment %}
               {% comment %} Configuring the line ending conversions {% endcomment %}
               <li>
@@ -463,7 +463,7 @@ please preview your site before committing, and make sure to run
           <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
           Because this installer is not signed by the developer, you may have to
           right click (control click) on the .pkg file, click Open, and click
-          Open on the pop up window. 
+          Open on the pop up window.
           After installing Git, there will not be anything in your <code>/Applications</code> folder,
           as Git is a command line program.
           <strong>For older versions of OS X (10.5-10.8)</strong> use the
@@ -492,8 +492,8 @@ please preview your site before committing, and make sure to run
     color-coding of key words. The default text editor on macOS and
     Linux is usually set to Vim, which is not famous for being
     intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
     return to the shell.
   </p>
 
